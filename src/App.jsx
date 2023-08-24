@@ -1,10 +1,17 @@
+import MenuProvider from "./Contexts/MenuContext"
+import CartProvider from "./Contexts/CartContext"
+
 import Home from "./Pages/Home"
 
 function App() {
 
   return (
     <>
-      <Home />
+      <MenuProvider>
+        <CartProvider>
+          <Home />
+        </CartProvider>
+      </MenuProvider>
     </>
   )
 }
