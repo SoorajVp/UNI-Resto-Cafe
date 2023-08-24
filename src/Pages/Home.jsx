@@ -17,7 +17,7 @@ const Home = () => {
     const fetchItems = async () => {
         const response = await fetch(BASE_URL)
         const json = await response.json();
-        console.log("This is card data ", json[0]?.table_menu_list)
+        console.log("This is card data ", json[0])
         setItems(json[0]?.table_menu_list)
         setMenuItems(json[0]?.table_menu_list[0])
     }

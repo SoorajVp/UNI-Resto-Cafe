@@ -6,7 +6,7 @@ const MenuTabs = ({ items }) => {
 
     return (
         <>
-            <div className="text-sm font-bold  font-serif text-gray-600">
+            <div className="text-sm font-bold font-serif text-gray-600 mt-16">
                 <ul className="flex overflow-x-auto border-b gap-5 md:px-8  w-auto">
                     {
                         items.map((item) => (

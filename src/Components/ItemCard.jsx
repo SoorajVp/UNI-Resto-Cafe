@@ -4,7 +4,7 @@ import { useContext, useState } from 'react'
 import { CartContext } from '../Contexts/CartContext';
 
 const ItemCard = ({ item }) => {
-    
+
     let [count, setCount] = useState(0)
     let { cartCount, setCartCount } = useContext(CartContext)
 
@@ -22,7 +22,7 @@ const ItemCard = ({ item }) => {
 
     return (
         <>
-            <div className="grid grid-cols-6 border-b-2 p-2 font-serif lg:mx-3">
+            <div className="grid grid-cols-6 border-b-2 p-2 font-serif lg:mx-5">
                 <div className="sm:col-span-5 col-span-4 flex gap-2">
                     <div>
                         <div className={`${item?.dish_Type == 2 ? "border-green-600 text-green-600" : "border-red-500 text-red-500"} border-2 mt-1 block`}>
